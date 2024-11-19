@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns:os="http://www.os.sytem/os" xmlns:office="http://www.os.system/office">
+
+    <os:software id="1">
+        <os:name>Windows 11</os:name>
+        <os:version>a224x</os:version>
+        <os:developer>Bill Gates</os:developer>
+        <os:url>https://www.microsoft.com/en-us/software-download/windows11</os:url>
+    </os:software>
+
+    <os:software id="2">
+        <os:name>Ubuntu</os:name>
+        <os:version>x23E</os:version>
+        <os:developer>Miguelon</os:developer>
+        <os:url>https://ubuntu.com/</os:url>
+    </os:software>
+
+    <os:software id="3">
+        <os:name>MACOS Ventura</os:name>
+        <os:version>13.6.1</os:version>
+        <os:developer>Apple </os:developer>
+        <os:url>https://apps.apple.com/es/app/macos-ventura/id1638787999?mt=12</os:url>
+    </os:software>
+
+    <office:software id="4">
+        <office:name>Microsoft Office </office:name>
+        <office:version>18.0.6</office:version>
+        <office:developer>Bill Gates</office:developer>
+        <office:url>https://www.office.com/</office:url>
+    </office:software>
+
+    <office:software id="5">
+        <office:name>Libreoffice</office:name>
+        <office:version>9.0.0</office:version>
+        <office:developer>Free Ware</office:developer>
+        <office:url>https://help.libreoffice.org/</office:url>
+    </office:software>
+
+    <office:software id="6">
+        <office:name>Google Docs</office:name>
+        <office:version>16.0.2</office:version>
+        <office:developer>Google</office:developer>
+        <office:url>https://docs.google.com/</office:url>
+    </office:software>
+ 
+</catalog>
