@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bibliography xmlns:book="http://www.example.com/book"
+              xmlns:employee="http://www.example.com/employee">
+    <!-- Información del libro como publicación de un empleado -->
+    <book:book>
+        <book:title>Learning XML</book:title>
+        <book:description>
+            Esta segunda edición de *Learning XML* proporciona a los desarrolladores web 
+            una comprensión concisa pero fundamentada de XML.
+        </book:description>
+    </book:book>
+
+    <!-- Información del empleado -->
+    <employee:employee>
+        <employee:name>Erik T. Ray</employee:name>
+        <employee:title>Mr.</employee:title>
+        <employee:publications>
+            <!-- Aquí puedes usar book:publication dentro de employee -->
+            <employee:publication>
+                <book:title>Learning XML</book:title>
+                <book:description>
+                    Esta es una publicación del empleado Erik T. Ray sobre XML.
+                </book:description>
+            </employee:publication>
+        </employee:publications>
+    </employee:employee>
+</bibliography>
