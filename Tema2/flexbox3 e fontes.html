@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <style>
         html{
             height: 100vh; 
         }
         body{
             margin: 0;
+            font-family: "Host Grotesk", sans-serif;
             height:100vh;
             display: flex;
             flex-direction: column;
@@ -17,6 +24,8 @@
         }
         header,footer{
             background-color: gold;
+            font-size: 2em;
+            font-weight: 600;
         }
 
         main{
@@ -30,7 +39,7 @@
         article{
             width: 100px;
             height: 200px;
-            background-color: red;
+            background-color: white;
         }
         article:nth-of-type(2){
             background-color: blueviolet;
@@ -60,14 +69,32 @@
             margin: 0;
             text-align: center;
         }
+        a{
+            text-decoration: none;
+            
+        }
+        a:visited{
+
+            color: crimson;
 
 
+        }
+
+        a:hover{
+
+            color: gold;
+
+        }
+        
+        a:active{
+            color: forestgreen;
+        }
     </style>
 </head>
 <body>
     <header><p>This is the header </p></header>
     <main>
-        <article></article>
+        <article><p><a href="https://www.eldiario.es/" target="_blank">Hola boas</a></p></article>
         <article></article>
         <article></article>
         <article></article>
