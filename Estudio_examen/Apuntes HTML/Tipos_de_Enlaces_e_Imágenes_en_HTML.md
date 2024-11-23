@@ -50,6 +50,8 @@ En HTML, puedes insertar imágenes usando la etiqueta `<img>`, que no requiere e
 ## Atributos básicos de `<img>`:
 - `src`: Especifica la ruta de la imagen.
 - `alt`: Texto alternativo que aparece si la imagen no se puede cargar (importante para accesibilidad).
+- `height`: Especifica el tamaño de la altura
+- `width`: Especifica el tamaño del ancho
 
 ### Formas de cargar imágenes:
 

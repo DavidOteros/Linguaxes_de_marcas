@@ -289,6 +289,153 @@ No abuses de `<br>` para añadir espacios entre bloques; usa márgenes y estilos
 
 ---
 
+## 1.9 Listas en HTML
+
+### Listas Ordenadas (`<ol>`)
+
+### Qué es:
+La etiqueta `<ol>` define una lista ordenada, en la que los elementos se enumeran automáticamente con números o letras, según el estilo especificado.
+
+### Cuándo usarlo:
+- Cuando necesitas mostrar elementos en un orden específico.
+- Ideal para listas numeradas, instrucciones paso a paso, o clasificaciones.
+
+### Contenido permitido:
+- Solo se permiten elementos `<li>` (list items) como hijos directos.
+
+### Ejemplo:
+```html
+<ol>
+    <li>Prepara los ingredientes.</li>
+    <li>Mezcla los ingredientes.</li>
+    <li>Hornea durante 30 minutos.</li>
+</ol>
+```
+
+### Resultado visual:
+1. Prepara los ingredientes.
+2. Mezcla los ingredientes.
+3. Hornea durante 30 minutos.
+
+---
+
+### Listas No Ordenadas (`<ul>`)
+
+### Qué es:
+La etiqueta `<ul>` define una lista no ordenada, donde los elementos se representan con viñetas (puntos) en lugar de números o letras.
+
+### Cuándo usarlo:
+- Cuando los elementos no tienen un orden específico.
+- Ideal para listas de características, puntos clave o elementos relacionados.
+
+### Contenido permitido:
+- Solo se permiten elementos `<li>` (list items) como hijos directos.
+
+### Ejemplo:
+```html
+<ul>
+    <li>Manzanas</li>
+    <li>Naranjas</li>
+    <li>Plátanos</li>
+</ul>
+```
+
+### Resultado visual:
+- Manzanas
+- Naranjas
+- Plátanos
+
+---
+
+### Listas de Definiciones (`<dl>`)
+
+### Qué es:
+La etiqueta `<dl>` define una lista de definiciones, que se utiliza para mostrar pares de términos y sus definiciones.
+
+### Cuándo usarlo:
+- Cuando necesitas presentar un conjunto de términos junto con sus explicaciones o significados.
+- Ideal para glosarios, listas de términos técnicos, o descripciones.
+
+### Contenido permitido:
+- Los elementos hijos deben ser `<dt>` (definición del término) y `<dd>` (descripción del término).
+
+### Ejemplo:
+```html
+<dl>
+    <dt>HTML</dt>
+    <dd>Lenguaje de marcado utilizado para estructurar páginas web.</dd>
+    <dt>CSS</dt>
+    <dd>Lenguaje utilizado para diseñar y estilizar páginas web.</dd>
+</dl>
+```
+
+### Resultado visual:
+- **HTML**: Lenguaje de marcado utilizado para estructurar páginas web.
+- **CSS**: Lenguaje utilizado para diseñar y estilizar páginas web.
+
+---
+
+## Notas Importantes
+
+### Anidación de listas:
+Puedes anidar listas ordenadas, no ordenadas o listas de definiciones dentro de otra lista.
+
+### Ejemplo:
+```html
+<ul>
+    <li>Frutas
+        <ul>
+            <li>Manzanas</li>
+            <li>Plátanos</li>
+        </ul>
+    </li>
+    <li>Verduras</li>
+</ul>
+```
+
+---
+
+## Personalización con CSS:
+
+Puedes cambiar el estilo de las viñetas en `<ul>` o el formato de los números en `<ol>` utilizando CSS.
+
+### Ejemplo:
+```html
+<style>
+    ul {
+        list-style-type: square;
+    }
+    ol {
+        list-style-type: upper-roman;
+    }
+</style>
+
+<ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+</ul>
+
+<ol>
+    <li>Paso 1</li>
+    <li>Paso 2</li>
+</ol>
+```
+
+### Resultado visual:
+- Viñetas cuadradas para la lista no ordenada.
+- Números romanos para la lista ordenada.
+
+---
+
+## Resumen de Listas
+
+| Etiqueta | Propósito           | Elementos permitidos |
+|----------|---------------------|----------------------|
+| `<ol>`   | Lista ordenada      | `<li>`              |
+| `<ul>`   | Lista no ordenada   | `<li>`              |
+| `<dl>`   | Lista de definiciones | `<dt>` y `<dd>`     |
+
+---
 ## Resumen
 
 | **Etiqueta** | **Propósito**                                     | **Dónde se usa**                       |
@@ -301,3 +448,4 @@ No abuses de `<br>` para añadir espacios entre bloques; usa márgenes y estilos
 | `<footer>`   | Pie de página.                                    | Final del documento o sección.         |
 | `<hr>`       | Entre el contenido a separar                      | Al final de la sección, párrafo etc.   |
 | `<br>`       | Entre el contenido a separar                      | Al final del parrafo o la línea que te interese separar  |
+
