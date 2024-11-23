@@ -5,6 +5,17 @@
 
 Los enlaces (`<a>` tag) son uno de los elementos más importantes en HTML, ya que conectan páginas entre sí o te dirigen a otros recursos.
 
+En HTML, puedes insertar links usando la etiqueta `<a>`.
+
+## Atributos básicos de `<img>`:
+- `href`: Especifica la URL.
+- `alt`: Asocia un texto con el link.
+- `target`: Le dice al navegador donde abrir el link. Hay cuatro targets, y cada uno comienza con el carácter (_):
+    - _blank: Abre el enlace en una nueva pestaña
+    - _parent: Abre el enlace vinculado en la ventana padre de la ventana o marco actual.
+    - _self: Abre el enlace vinculado en la misma ventana o pestaña que contiene el enlace. Es el valor predeterminado, por lo que no necesitas especificarlo explícitamente.
+    - _top: Abre el enlace en toda la ventana del navegador, ignorando marcos o subventanas.
+
 ## Tipos principales de enlaces:
 
 ### Enlaces externos:
