@@ -1,0 +1,37 @@
+
+<style>
+  
+  body{
+    background:#62306D;
+    margin: 0px;
+    position:absolute
+  }
+
+ #circulo{
+   width: 200px;
+   height: 200px;
+   background:#F7EC7D;
+   position:absolute;
+   top:50px;
+   left: 100px;
+   border-radius: 100%;
+    }
+  #cuadrado {
+    width: 100px;
+    height: 100px;
+    background: #E38F66;
+    position:absolute;
+    left: 100px;
+    top: 50px;
+    border-radius: 100% 0% 0% 0%;
+  }
+  #circulito{
+  width: 120px;
+  height:120px;
+  background: #62306D;
+  position:absolute;
+  top:90px;
+  left:140px;
+  border-radius: 100%
+  }
+</style>

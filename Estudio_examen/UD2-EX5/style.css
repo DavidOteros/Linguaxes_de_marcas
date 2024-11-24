@@ -1,0 +1,68 @@
+body {
+    background-color: #62306d;
+    color: #e3d27b;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 250px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#circulo{
+    width: 200px;
+    height: 200px;
+    background:#F7EC7D;
+    position:absolute;
+    top:50px;
+    left: 100px;
+    border-radius: 100%;
+    }
+#cuadrado {
+    width: 100px;
+    height: 100px;
+    background: #E38F66;
+    position:absolute;
+    left: 100px;
+    top: 50px;
+    border-radius: 100% 0% 0% 0%;
+}
+#circulito{
+width: 120px;
+height:120px;
+background: #62306D;
+position:absolute;
+top:90px;
+left:140px;
+border-radius: 100%
+}
+
+h1{
+    position: relative;
+
+}
+
+p{
+    position: relative;
+    text-align: start; /* Alinea el texto a la izquierda */
+    width: 50%; /* Ajusta el ancho del párrafo para mayor control */
+    margin: auto; /* Centra el párrafo horizontalmente */
+   
+}
+
+main {
+    width: 100vw;
+    height: 400px;
+    background-image: url("./donuts.png");
+    background-repeat: repeat; /* Repetir horizontalmente */
+    background-size: 200px; /* Ajusta el tamaño de la imagen */
+   
+}
+
+footer{
+
+    margin-top: 30px;
+}
