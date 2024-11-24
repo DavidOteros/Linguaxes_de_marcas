@@ -99,7 +99,39 @@ Encabezados, párrafos, imágenes, listas, etc.
 
 ---
 
-## 1.5 `<aside>`
+# 1.5 `<div>``
+
+**Qué es:**  
+`<div>` es una etiqueta genérica de contenedor que agrupa otros elementos HTML sin agregar significado semántico.
+
+**Cuándo usarlo:**
+- Cuando no hay una etiqueta semántica adecuada para el contenido.
+- Para crear contenedores para aplicar estilos o scripts con CSS y JavaScript.
+
+**Ejemplo:**
+
+```html
+<div class="contenedor">
+    <header>
+        <h1>Encabezado dentro de un div</h1>
+    </header>
+    <p>Contenido agrupado dentro de un div.</p>
+</div>
+```
+**Buenas prácticas con `<div>`:**
+1. Usar clases o identificadores:
+Ayuda a identificar el propósito del <div> para estilos o scripts.
+```html
+<div id="sidebar" class="menu-lateral">
+    <!-- Contenido de la barra lateral -->
+</div>
+```
+2. Evitar abuso de `<div>`:
+Si existe una etiqueta semántica adecuada como `<section>`, `<article>`, o `<header>`, úsala en lugar de `<div>`.
+
+---
+
+## 1.6 `<aside>`
 
 **Qué es:**  
 Representa contenido relacionado pero no esencial con el contenido principal. Generalmente se utiliza para barras laterales o cajas informativas.
@@ -121,7 +153,7 @@ Todo tipo de contenido (párrafos, listas, imágenes, etc.).
 
 ---
 
-## 1.6 `<footer>`
+## 1.7 `<footer>`
 
 **Qué es:**  
 Representa el pie de página de un documento o una sección.  
@@ -140,8 +172,9 @@ Párrafos, enlaces, listas, etc.
     <p>&copy; 2024 Mi Sitio Web</p>
 </footer>
 ```
+---
 
-## 1.7 `<hr>`
+## 1.8 `<hr>`
 
 **Qué es:**  
 Se utiliza para indicar una separación temática o un cambio de contexto en el contenido.
@@ -263,7 +296,7 @@ Por defecto, los navegadores dibujan una línea horizontal en la página para se
 
 En este caso, el `<figure>` contiene un video y su respectivo pie de figura explicativo.
 
-## 1.8 `<br>`
+## 1.9 `<br>`
 
 **Qué es:**  
 `<br>` es una etiqueta auto-contenida que se utiliza para crear un salto de línea en el texto, moviendo el contenido siguiente al siguiente renglón.
@@ -289,7 +322,7 @@ No abuses de `<br>` para añadir espacios entre bloques; usa márgenes y estilos
 
 ---
 
-## 1.9 Listas en HTML
+## Listas en HTML
 
 ### Listas Ordenadas (`<ol>`)
 
@@ -445,6 +478,7 @@ Puedes cambiar el estilo de las viñetas en `<ul>` o el formato de los números 
 | `<section>`  | Contenido temático de una página.                 | Para dividir el contenido en bloques.  |
 | `<article>`  | Contenido independiente (artículos, posts).       | Publicaciones, noticias, blogs.        |
 | `<aside>`    | Contenido relacionado (barras laterales).         | Información complementaria.            |
+| `<div>`      | Contenedor genérico.	                           | Para estilos y scripts.                |
 | `<footer>`   | Pie de página.                                    | Final del documento o sección.         |
 | `<hr>`       | Entre el contenido a separar                      | Al final de la sección, párrafo etc.   |
 | `<br>`       | Entre el contenido a separar                      | Al final del parrafo o la línea que te interese separar  |
