@@ -1,0 +1,90 @@
+<section>
+  <div id="one"></div>
+  <div id="two"></div>
+  <div id="three"></div>
+  <div id="four"></div>
+  <div id="five"></div>
+  <div id="six"></div>
+  <div id="seven"></div>
+  <div id="eight"></div>
+</section>  
+
+
+<style>
+  
+body{
+    margin:0px;
+}
+
+section {
+  width: 400; /* Ancho total de la ventana */
+  height: 300px; /* Altura explícita */
+  background-color: lightpink; /* Fondo rojo */
+}
+  
+  #one{
+    width:30px;
+    height:80px;
+    background:blue;
+    position:absolute;
+    bottom:0px;
+    left:120px;  
+}
+ #two{
+    width:30px;
+    height:80px;
+    background:blue;
+    position:absolute;
+    bottom:0px;
+    left:180px;
+}
+   #three{
+    width:30px;
+    height:80px;
+    background:blue;
+    position:absolute;
+    bottom:0px;
+    left:240px;
+} 
+  #four{
+    width:150px;
+    height:30px;
+    background:blue;
+    position:absolute;
+    bottom:80px;
+    left:120px; 
+}
+   #five{
+    width:30px;
+    height:80px;
+    background:blue;
+    position:absolute;
+    bottom:110px;
+    left:150px;
+}
+    #six{
+    width:30px;
+    height:80px;
+    background:blue;
+    position:absolute;
+    bottom:110px;
+    left:210px;
+}
+  #seven{
+    width:90px;
+    height:30px;
+    background:blue;
+    position:absolute;
+    bottom:190px;
+    left:150px; 
+}
+    #eight{
+    width:30px;
+    height:80px;
+    background:blue;
+    position:absolute;
+    bottom:px;
+    left:180px;
+}
+
+</style>
