@@ -33,6 +33,7 @@ p{
     left: 50%;
     color: lightpink;
     font-size: 24px;
+    
 
 
 }
@@ -111,15 +112,6 @@ section {
       left:180px;
   }
 
-  /*creo un article, porque debido a que tuve que reducir las proporciones a través del transform scale, el section me interesa que el transform-origin se haga desde el top left, y en este caso desde el top-right */
-  article { 
-    width: 400px;
-    height: 300px;
-    background-color: lightpink;
-    position: relative; /* Mantén la relación con los elementos hijos */
-  }
-
- 
   main{
     background-color: red;
     height: 2000px;
