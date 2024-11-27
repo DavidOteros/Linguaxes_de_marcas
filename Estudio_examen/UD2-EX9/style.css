@@ -1,0 +1,42 @@
+body{
+
+    margin: 0;
+}
+
+header{
+
+    width: 100%;
+    height:250px;
+    background-image: url(./vegetables-resources/img/banner1.png);
+    background-size:cover;
+}
+
+main{
+
+    width: 100%;
+    height: 1500px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;    
+    }
+
+
+article {
+        width: 400px;
+        height: 400px;
+        background-color: aqua;
+        border: 2px solid black; /* Grosor de 2px, estilo sólido y color negro */
+        margin: 10px;
+}
+
+footer{
+
+    width: 100%;
+    height:250px;
+    background-image: url(./vegetables-resources/img/banner2.png);
+    background-size:cover;
+}
+
