@@ -7,7 +7,7 @@ Los enlaces (`<a>` tag) son uno de los elementos más importantes en HTML, ya qu
 
 En HTML, puedes insertar links usando la etiqueta `<a>`.
 
-## Atributos básicos de `<img>`:
+## Atributos básicos de `<a>`:
 - `href`: Especifica la URL.
 - `alt`: Asocia un texto con el link.
 - `target`: Le dice al navegador donde abrir el link. Hay cuatro targets, y cada uno comienza con el carácter (_):
@@ -62,7 +62,7 @@ En HTML, puedes insertar imágenes usando la etiqueta `<img>`, que no requiere e
 - `src`: Especifica la ruta de la imagen.
 - `alt`: Texto alternativo que aparece si la imagen no se puede cargar (importante para accesibilidad).
 - `height`: Especifica el tamaño de la altura
-- `width`: Especifica el tamaño del ancho
+- `width`: Especifica el tamaño del ancho. Si ajustas únicamente la altura o el ancho, automaticamente se ajusta la imagen manteniendo sus proporciones.
 
 ### Formas de cargar imágenes:
 
