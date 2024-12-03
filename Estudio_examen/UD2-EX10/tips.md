@@ -6,3 +6,6 @@ So podes poñer un h1 no documento
 Nos heads non podemos utlizar
 
 clip path
+
+
+hacerlo por flexbox 4, empujando unos a otros 

@@ -15,7 +15,7 @@ header{
 
     position: fixed;
     display: flex;
-    flex-direction: ;
+    
 
 }
 
@@ -28,9 +28,10 @@ position: relative;
 section{
 
     display: flex;
-    flex-direction: row;
-
 }
+
+
+article
 
 #uno article:first-of-type {
     background-image:url(./yummy-resources/img/apple-pie.jpg);
@@ -43,10 +44,12 @@ section{
     background-size: 100%;
     width: 50%;
     height: 110vh;
-    font-size: 20;
     color: #590209;
-
+    font-size: 30px;
+    text-align:center;
+    align-self: center;
+    position: relative;
+    width: 50%;
 }
 
 
-#
