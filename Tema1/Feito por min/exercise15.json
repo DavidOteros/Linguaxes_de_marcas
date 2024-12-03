@@ -7,7 +7,7 @@
     "list_of_movies": [
         {
             "name": "El día de la bestia",
-            "fecha_estreno": "2010-08-02"
+            "fecha_estreno": "2010-08-02"  //As fechas sempre yyyy/mm/dd
         },
         {
             "name": "Dos tontos muy tontos",
