@@ -1,4 +1,6 @@
 
+
+
 body{
 
     background-color: #F8F6E9;
@@ -42,6 +44,15 @@ header nav{
     font-size: inherit;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+
+}
 
 #logo-yummy{
     display: flex;
@@ -51,6 +62,10 @@ header nav{
     padding: 15px;
     border-radius: 10px;
     background-color: #F8F6E9;
+    font-family: "Merienda", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
     
 }
 
@@ -352,6 +367,8 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     position: relative;
+    font-family:
+    
 
 }
 
@@ -361,7 +378,6 @@ footer ul {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    
 }
 footer ul li {
     padding: 10px;
@@ -369,6 +385,13 @@ footer ul li {
     justify-content: center;
     text-align: center;
 
+}
+
+footer ul li:nth-child(1){
+    font-family: "Merienda", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 footer ul li:nth-child(4){
