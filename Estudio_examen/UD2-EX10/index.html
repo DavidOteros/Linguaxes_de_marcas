@@ -11,7 +11,13 @@
 </head>
 <body>
     <header>
-        <div>Yummy</div>
+        <div id="logo-yummy">
+            <div id="logo"> 
+                <div id="triangle"></div>
+                <div id="circulo"></div>
+            </div>
+            <div>Yummy</div>
+        </div>
         <nav>
             <ul>
                 <li>Who we are</li>
@@ -116,10 +122,53 @@
 
 
         </section>
-        <section>11 foto tarta</section>
-        <section> 12 BOOKING</section>
+        <section>11 foto tarta</section> <!--Foto tarta-->
+        <section> 
+            <h2>BOOKING AND INFORMATION REQUEST</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quod corrupti porro.</p>
+            <form action="booking.php" method="post">
+                <input type="text" id = "full-name" placeholder="Full name *" required>
+                <input type="email" placeholder="Email address *" required>
+                <input type="tel" placeholder="Phone number *" required>
+                <input type="text" placeholder="Website or social media *" required>
+                <input type="text" placeholder="Profession *" required>
+                
+                <!-- Textarea -->
+                <textarea placeholder="Describe your skills *" rows="4" required></textarea>
+                <!-- Última fila -->
+                <input type="text" placeholder="How did you find us?">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I have read and agree to the terms and conditions</label>
+                <button type="submit">Submit my request</button>
+
+            </form> 
+
+
+        </section>
 
     </main>
-    <footer> </footer>
+    <footer>
+<!--
+        <address>    
+            New Street,5 
+            15678 Liberty City
+        </address>
+        <p>&copy; 2024 Yummy. All rights reserved</p>-->
+        <ul>
+            <li>
+                <div id="logo-yummyfooter">
+                <div id="logo-footer"> 
+                    <div id="triangle2"></div>
+                    <div id="circulo2"></div>
+                </div>
+                <div>Yummy</div>
+                </div>
+            </li>
+            <li>New Street, 5</li>
+            <li>15678 Liberty City</li>
+            <li>&copy; 2024 Yummy. All rights reserved</li>
+        </ul>
+
+    </footer>
 </body>
 </html>
