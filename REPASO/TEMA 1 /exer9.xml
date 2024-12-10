@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog xmlns:os="https://www.os.sytem/os" xmlns:office="https://www.office.system/office">
+    <os:software id="1">
+        <os:name>IOS</os:name>
+        <os:version>13.0.0</os:version>
+        <os:developer>Steve Jobs</os:developer>
+        <os:url>https://www.ios.com</os:url>
+    </os:software>
+
+    <office:software id="2">
+        <office:name>Libre Office</office:name>
+        <office:version>Michael Cera</office:version>
+        <office:developer>Miguel Grimaldo</office:developer>
+        <office:url>https://www.michaelcera.org</office:url>
+    </office:software>
+</catalog>
