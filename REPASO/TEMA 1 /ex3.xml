@@ -1,0 +1,27 @@
+<?xml version="1.0" encodign="UTF-8"?>
+
+<catalog>
+    <product>
+        <name>Pantalla OLED</name>
+        <description>Preciosa pantalla de ordenador de la marca warp</description>
+        <price moneda="€">300</price>
+        <characteristics>
+            <feature>
+                <name>Tecnología OLED </name>
+                <value>Oled 5.4-X</value>
+            </feature>
+        </characteristics>
+    </product>
+
+    <product>
+        <name>Batidora</name>
+        <description>Batidora eléctrica Bosch</description>
+        <price moneda="€">25</price>
+        <characteristics>
+            <feature>
+                <name>Doble motor</name>
+                <value>Motor de hasta 5000rpm</value>
+            </feature>
+        </characteristics>
+    </product>
+</catalog>
