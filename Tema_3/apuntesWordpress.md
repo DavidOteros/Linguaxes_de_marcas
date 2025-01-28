@@ -69,3 +69,27 @@ No header poñemos:
 Key: Content-Disposition
 Value: attachment;filename="WP-1-cms.pdf" , entre as comillas o nome do arquivo pra subir.
 
+
+
+## El Audio se pone con el html, pero las imagenes con media hay que ponerlas y el link del vídeo tiene que ir tb a través del html 
+
+
+## Cambiar 404 page error
+
+Se debe de hacer en, Appearance --> Editor --> Templates --> Page:404
+
+
+## Para subir página web 
+
+Post - https://student-domain/wp-json/wp/v2/pages
+
+name - O nome 
+content - O xml
+
+## EX3. Convertir en columnas y poner en 50/50
+
+Primero seleccionamos en título de la columna, y le damos al boton de guardar de instagram y le das a column, despues coges el bloque de texto de abajo y lo arrastras encima y ya lo pones en formato columna, lo mismo con una imagen o lo que sea
+
+Hacemos lo mismo para la otra columna. 
+
+Y luego creas una columna, de 50/50 y dentro de ellas metes las otras 2 columnas 
