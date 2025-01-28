@@ -56,6 +56,10 @@ En autthorization es para autorizar xd, y parametros es donde das tu los paráme
 17/01/2025 --> De momento vimos, crear tags, crear categorias, delete aún no, y ahora vamos a subir una imágen. Usando en todo momento "Params"
 
 
+## Para subir cosas
+
+Sempre nos colocamos en Body, e logo podemos usar 'Formdata' ou 'RAW' que vai en formato JSON
+
 ## Imaxes
 
 'https://student-domain/wp-json/wp/v2/media/'
