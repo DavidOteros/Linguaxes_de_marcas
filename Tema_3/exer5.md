@@ -6,7 +6,7 @@ Cuando las cosas no te coincidan le das a group y ya verás como va
 
 Categories = metense así []
 
-
+### Exercicio 6
 Para subir el post, estos campos:
 
 ``` json
@@ -20,3 +20,7 @@ Para subir el post, estos campos:
   }
 ```
 La feature_image, se pone poniendo el identificador que tiene en media
+
+
+### Exercicio 7
+Quiere que los últimos tres post aparecen nada mas entrar, para eso vas a settings, e dentro de reading, entonces lo único que hacer, es your homepage displays, y seleccionas a static page, lluego en la homepage, eliges la que te interesa, e nuestro caso "The last three post"
