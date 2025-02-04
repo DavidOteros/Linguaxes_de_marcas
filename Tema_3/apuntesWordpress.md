@@ -73,6 +73,9 @@ No header poñemos:
 Key: Content-Disposition
 Value: attachment;filename="WP-1-cms.pdf" , entre as comillas o nome do arquivo pra subir.
 
+En body:
+
+Seleccionamos binary e ahí poñemos a imaxe que vamos a subir
 
 
 ## El Audio se pone con el html, pero las imagenes con media hay que ponerlas y el link del vídeo tiene que ir tb a través del html 
@@ -89,6 +92,8 @@ Post - https://student-domain/wp-json/wp/v2/pages
 
 name - O nome 
 content - O xml
+excerpt - A descripción 
+categories - Non se pode poñer category
 
 ## EX3. Convertir en columnas y poner en 50/50
 
