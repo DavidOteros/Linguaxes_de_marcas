@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> <!-- Si ponemos standalone="yes" quiere decir que nosotros validamos todo en el documento en cuestión sin necesitar algo a mayores para poder validar -->
+
+
+<!-- INSERT DOCTYPE cando lledas a "<". Para decir que un documento é XML úsase DTD, DOCTYPE businnes chámase igual que o nodo raíz, esto sempre é así --> 
+<!-- Estamos validando con un DTD, non so cumpren os datos, senon tamén a estructura-->
+<!DOCTYPE business [ 
+    <!ELEMENT business (videogame)>
+    <!ELEMENT videogame (title,developer)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT developer (#PCDATA)>
+]>
+
+<business>
+    <videogame>
+        <title>Dragon Quest IX</title>
+        <developer>Level 5</developer>
+    </videogame>
+</business>
