@@ -1,18 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?> <!-- Si ponemos standalone="yes" quiere decir que nosotros validamos todo en el documento en cuestión sin necesitar algo a mayores para poder validar -->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> <!-- Si ponemos standalone="yes" quiere decir que
+nosotros validamos todo en el documento en cuestión sin necesitar algo a mayores para poder validar -->
 
 
-<!-- INSERT DOCTYPE cando lledas a "<". Para decir que un documento é XML úsase DTD, DOCTYPE businnes chámase igual que o nodo raíz, esto sempre é así --> 
+<!-- INSERT DOCTYPE with subset, cando lledas a "<". Para decir que un documento é XML úsase DTD, DOCTYPE
+businnes chámase igual que o nodo raíz, esto sempre é así -->
 <!-- Estamos validando con un DTD, non so cumpren os datos, senon tamén a estructura-->
-<!DOCTYPE business [ 
-    <!ELEMENT business (videogame)>
-    <!ELEMENT videogame (title,developer)>
+<!DOCTYPE business [
+    <!ELEMENT business (videogame|toy)*> <!-- Se poñemos * significa que podemos tener de 0 videojuego a N.  Si ponemos + significa mínimo 1, máximo los que sean -->
+    <!-- "|" este simbolo funciona como "OR", podemos tener videogame o toy-->
+    <!ELEMENT videogame (title,developer,release_date?)> <!-- Interrogante é  Cero ou 1 -->
     <!ELEMENT title (#PCDATA)>
     <!ELEMENT developer (#PCDATA)>
+    <!ELEMENT release_date (#PCDATA)>
+    <!ELEMENT toy (#PCDATA)>
+    <!ATTLIST toy color CDATA #IMPLIED> <!--Esto para los atributos: CDATA é o equivalente a String-->
+    <!-- #REQUIRED, quere decir que é obligatorio, #IMPLIED, quere decir que pode aparecer ou non-->
 ]>
 
 <business>
     <videogame>
         <title>Dragon Quest IX</title>
         <developer>Level 5</developer>
+        <release_date>2009</release_date>
+    </videogame>    
+    <toy color="black">Story</toy>
+    <videogame>
+        <title>Fornite</title>
+        <developer>Epic Games</developer>
     </videogame>
+    <toy>Boy</toy>
 </business>
