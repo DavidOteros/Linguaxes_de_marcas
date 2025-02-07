@@ -5,6 +5,7 @@ Para usar o read more, non utilizamos o read more do excerpt, senon que utilizam
 Cuando las cosas no te coincidan le das a group y ya verás como va 
 
 Categories = metense así []
+As templates poñense tamen co postman
 
 ### Exercicio 6
 Para subir el post, estos campos:
