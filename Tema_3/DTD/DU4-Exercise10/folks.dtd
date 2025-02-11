@@ -1,0 +1,6 @@
+<!ELEMENT folks (person)*>
+<!ELEMENT person (name)>
+<!ATTLIST person pin ID #REQUIRED> <!--ID para identificar a la persona-->
+<!ATTLIST person friend IDREF #IMPLIED> <!-- IDREF porque só hai un  -->
+<!ATTLIST person likes IDREFS #IMPLIED> <!-- IDREFS porque osn varios -->
+<!ELEMENT name (#PCDATA)>

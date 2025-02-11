@@ -18,3 +18,5 @@ Dúas formas de validar que son:
 
 Que significa: 
 - Datos son correctos, ten os datos ven estructurados e en formato 
+
+

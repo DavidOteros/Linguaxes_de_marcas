@@ -1,0 +1,26 @@
+<!ELEMENT hogwarts (rooms,teachers,courses)>
+<!ELEMENT rooms (room+)>
+<!ELEMENT room EMPTY>
+<!ATTLIST room name ID #REQUIRED> <!-- Habitación que ten un nome eso é un ID, e se usamos o mesmo nome dende outra parte eso é un IDREF-->
+<!ATTLIST room nrSeats NMTOKEN #REQUIRED>
+
+<!ELEMENT teachers (teacher+)>
+<!ELEMENT teacher (title?)>
+<!ATTLIST teacher name ID #REQUIRED>
+<!ATTLIST teacher room IDREF #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT courses (course+)>
+<!ELEMENT course (class+)>
+<!ATTLIST course name ID #REQUIRED> <!-- Snape é un id, e teacher tamen sería un IDREF, é dicir fai referencia ao ID -->
+<!ATTLIST course teacher IDREF #REQUIRED>
+<!ATTLIST course nrStudents NMTOKEN #IMPLIED>
+
+<!ELEMENT class EMPTY>
+<!ATTLIST class day CDATA #REQUIRED>
+<!ATTLIST class hour CDATA #REQUIRED>
+
+<!-- NMTOKE, sirver para poner nomes en XML, si necesitas un % non o podes usar-->
+
+<!-- CDDATA, para cuando necesitamos simbolos por exemplo para hora ou fecha -->
