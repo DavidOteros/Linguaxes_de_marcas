@@ -6,15 +6,18 @@ nosotros validamos todo en el documento en cuestión sin necesitar algo a mayore
 businnes chámase igual que o nodo raíz, esto sempre é así -->
 <!-- Estamos validando con un DTD, non so cumpren os datos, senon tamén a estructura-->
 <!DOCTYPE business [
-    <!ELEMENT business (videogame|toy)*> <!-- Se poñemos * significa que podemos tener de 0 videojuego a N.  Si ponemos + significa mínimo 1, máximo los que sean -->
+    <!ELEMENT business (videogame|toy|game)*> <!-- Se poñemos * significa que podemos tener de 0 videojuego a N.  Si ponemos + significa mínimo 1, máximo los que sean -->
     <!-- "|" este simbolo funciona como "OR", podemos tener videogame o toy-->
     <!ELEMENT videogame (title,developer,release_date?)> <!-- Interrogante é  Cero ou 1 -->
     <!ELEMENT title (#PCDATA)>
     <!ELEMENT developer (#PCDATA)>
     <!ELEMENT release_date (#PCDATA)>
     <!ELEMENT toy (#PCDATA)>
-    <!ATTLIST toy color CDATA #IMPLIED> <!--Esto para los atributos: CDATA é o equivalente a String-->
+    <!ATTLIST toy color NMTOKEN #IMPLIED> <!--Esto para los atributos: CDATA é o equivalente a String-->
     <!-- #REQUIRED, quere decir que é obligatorio, #IMPLIED, quere decir que pode aparecer ou non-->
+    <!-- Cando poemos CDATA queremos decir que podemos poñer calcquera caracter %, € etc.-->
+    <!-- Cando poñemos NMTOKEN, so podemos poñer alguns caracteres concretos, Alfabeticos, numéricos e algunha cousa mais . Recordar que esto é para os atributos-->
+    <!ELEMENT game EMPTY> <!--Empty fai referencia a que está baleiro-->
 ]>
 
 <business>
@@ -29,4 +32,5 @@ businnes chámase igual que o nodo raíz, esto sempre é así -->
         <developer>Epic Games</developer>
     </videogame>
     <toy>Boy</toy>
+    <game/>
 </business>

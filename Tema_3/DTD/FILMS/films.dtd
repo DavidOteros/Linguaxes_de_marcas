@@ -1,0 +1,8 @@
+<!ELEMENT films (film+,filmmaker+,info)>
+<!ELEMENT film (name)>
+<!ATTLIST film id NMTOKEN #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT filmmaker (name)>
+<!ATTLIST filmmaker id NMTOKEN #IMPLIED> <!-- Que é optativo-->
+<!ELEMENT info (#PCDATA|important)*> <!-- Revisar que quería decir esto, el asterisco va después del corchete siempre-->
+<!ELEMENT important EMPTY> <!-- Ponlle EMPTY porque é un elemento que non ten nada-->

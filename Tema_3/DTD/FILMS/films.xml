@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>  
+
+
+<!DOCTYPE films SYSTEM "films.dtd">
+<films>
+    <film id="F1">
+        <name>Forrest Gump</name>
+    </film>
+    <film id="F2">
+        <name>The war of worlds</name>
+    </film>
+    <film id="F3">
+        <name>American Psycho</name>
+    </film>
+    <filmmaker id="FM1">
+        <name>Robert Zemeckys</name>
+    </filmmaker>
+    <filmmaker id="FM2">
+        <name>Steven Spielberg</name>
+    </filmmaker>
+    <filmmaker id="FM2">
+        <name>Mary Marron</name>
+    </filmmaker>
+    <info>
+        <important/>
+        This films are really interesting
+    </info>
+</films>
