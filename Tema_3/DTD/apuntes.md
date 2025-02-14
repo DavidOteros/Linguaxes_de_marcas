@@ -20,3 +20,34 @@ Que significa:
 - Datos son correctos, ten os datos ven estructurados e en formato 
 
 
+## Attlist -- Lista de atributos 
+
+Cuando vemos ATTLIST, realmente la forma mas ortodoxa de hacerlo, es decir aquí creo una lsita de atributos, para un elemento concreto e dentro de ese book, definimos atributos. 
+
+CDTA é un string, implied (opcional), FIXED (que sempre toma o mesmo valor)
+
+ID, es un identificador único para un elemento particular que nunca puede repetirse, si pone ID siempre teneos que poner #REQUIRED
+
+(yes|no), que solo puede tomar dos valores (chamase enumerado),  si paarece "yes" al lado quiere decir que ese es el valor por defecto. 
+
+## Entidades de HTML
+- &amp; --> &
+- &lt; --> <
+- &gt; -->  >
+- &quot; --> "
+- &apos; --> ' 
+
+Estas entidades no hay que declaralas en xml, el resto ya si 
+
+- &copy; --> Simbolo de copyright
+
+
+
+Saber como se define y como funciona
+
+<!EnTITY name "David Otero">
+
+<persona>
+    &name;
+
+</persona>
