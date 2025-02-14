@@ -1,0 +1,34 @@
+<!ELEMENT computer_shop (products+,customers*,sales*)>
+<!ELEMENT products (product)>
+<!ELEMENT product (title,(manufacturer|brand),model,price,stock,reconditioned)>
+<!ATTLIST product id ID #REQUIRED>
+<!ATTLIST product EAN NMTOKEN #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT manufacturer (#PCDATA)> <!--EMPTY QUE PUEDE NO LLEVAR NADA -->
+<!ELEMENT brand (#PCDATA)> <!--EMPTY QUE PUEDE NO LLEVAR NADA -->
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price currency (EUR|USD) #REQUIRED>
+<!ATTLIST price discount  NMTOKEN "0"> <!-- Para dar valor por defecto, se pone -->
+<!ATTLIST price VAT (general|reduced|super-reduced) #REQUIRED> 
+<!ELEMENT stock (#PCDATA)>
+<!ELEMENT reconditioned EMPTY>
+<!ELEMENT customers (customer)>
+<!ELEMENT customer (id_card,((first_name,surnames)|complete_name),telephone*, postal_address?)>
+<!ATTLIST customer id ID #REQUIRED>
+<!ATTLIST customer date_of_creation NMTOKEN #REQUIRED>
+<!ELEMENT id_card (#PCDATA)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT surnames (#PCDATA)>
+<!ELEMENT complete_name (#PCDATA)>
+<!ELEMENT telephone (#PCDATA)>
+<!ELEMENT postal_address (#PCDATA)>
+<!ELEMENT sales (sale)>
+<!ELEMENT sale (list_of_products+,total_price,currency)>
+<!ATTLIST sale date_of_sale NMTOKEN #REQUIRED>
+<!ATTLIST sale customer IDREF #REQUIRED>
+<!ATTLIST sale product_identifier IDREF #REQUIRED>
+<!ATTLIST sale quantity_sold NMTOKEN "1">
+<!ELEMENT list_of_products (#PCDATA)>
+<!ELEMENT total_price (#PCDATA)>
+<!ELEMENT currency (#PCDATA)>

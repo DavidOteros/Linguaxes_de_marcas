@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE computer_shop SYSTEM "computer_shop.dtd">
+<computer_shop>
+    <products>
+        <product id="P1" EAN = "EAN1">
+            <title>Chocolate Milka</title>
+            <manufacturer>Milka</manufacturer>
+            <model>Oreo</model>
+            <price currency="EUR" discount="12" VAT = "general"></price>
+            <stock>25</stock>
+            <reconditioned></reconditioned>
+        </product>
+    </products>
+    <customers>
+        <customer id="C1" date_of_creation ="14-02-2025">
+            <id_card>C1-1001</id_card>
+            <first_name>David</first_name>
+            <surnames>Otero</surnames>
+            <telephone></telephone>
+            <postal_address></postal_address>
+        </customer>
+    </customers>
+    <sales>
+        <sale date_of_sale ="" customer = "" product_identifier = "" quantity_sold = "">
+            <list_of_products></list_of_products>
+            <total_price></total_price>
+            <currency></currency>
+        </sale>
+    </sales>
+
+
+</computer_shop>
