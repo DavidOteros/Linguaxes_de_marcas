@@ -1,0 +1,16 @@
+
+<shiporder>
+    <orderperson></orderperson>
+    <shipto>
+        <name>Miguel</name>
+        <address>Rueiro de Figueiriñas</address>
+        <city>Santiago de Compostela</city>
+        <country>España</country>
+    </shipto>
+    <item>
+        <tittle>Iphone 6</tittle>
+        <note>Dejar en el piso de enfrente</note>
+        <quantity>1</quantity>
+        <price>200</price>
+    </item>
+</shiporder>
