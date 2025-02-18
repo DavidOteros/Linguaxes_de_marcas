@@ -1,6 +1,6 @@
-<!ELEMENT computer_shop (products+,customers*,sales*)>
-<!ELEMENT products (product)>
-<!ELEMENT product (title,(manufacturer|brand),model,price,stock,reconditioned)>
+<!ELEMENT computer_shop (products,customers,sales)>
+<!ELEMENT products (product+)>
+<!ELEMENT product (title,(manufacturer|brand),model,price,stock,reconditioned?)>
 <!ATTLIST product id ID #REQUIRED>
 <!ATTLIST product EAN NMTOKEN #IMPLIED>
 <!ELEMENT title (#PCDATA)>
@@ -13,7 +13,7 @@
 <!ATTLIST price VAT (general|reduced|super-reduced) #REQUIRED> 
 <!ELEMENT stock (#PCDATA)>
 <!ELEMENT reconditioned EMPTY>
-<!ELEMENT customers (customer)>
+<!ELEMENT customers (customer*)>
 <!ELEMENT customer (id_card,((first_name,surnames)|complete_name),telephone*, postal_address?)>
 <!ATTLIST customer id ID #REQUIRED>
 <!ATTLIST customer date_of_creation NMTOKEN #REQUIRED>
@@ -23,7 +23,7 @@
 <!ELEMENT complete_name (#PCDATA)>
 <!ELEMENT telephone (#PCDATA)>
 <!ELEMENT postal_address (#PCDATA)>
-<!ELEMENT sales (sale)>
+<!ELEMENT sales (sale*)>
 <!ELEMENT sale (list_of_products+,total_price,currency)>
 <!ATTLIST sale date_of_sale NMTOKEN #REQUIRED>
 <!ATTLIST sale customer IDREF #REQUIRED>

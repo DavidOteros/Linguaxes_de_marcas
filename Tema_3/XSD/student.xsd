@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="student">
+        <xs:complexType> <!-- Ahora mismo no es reutilizable-->
+            <xs:sequence>
+                <xs:element name="name" type="xs:string" />
+                <xs:element name="born_year" type="validYearsType" /> <!---->
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer" use="required" />
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="validYearsType"> <!--Tipos de datos simples, estamos poniendo una restricción de que alguien que esté en el curso tenga que haber nacido entre 1900 y 2008-->
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1900"/>
+            <xs:maxInclusive value="2008"/>
+        </xs:restriction>
+    </xs:simpleType> <!--Ten a manía que os nomes dos tipos, acaben e Type-->
+</xs:schema>

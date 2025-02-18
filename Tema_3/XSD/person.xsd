@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="person" type="personType"/>
+    <xs:complexType name="personType">  <!-- Ahora mismo elemento persona y personType non estan unidos, para eso temos que decirlle a este elemento person, que tipo ten. Por eso poñemos en name o type ="personType"-->
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="surnames" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

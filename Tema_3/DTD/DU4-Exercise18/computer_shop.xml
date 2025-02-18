@@ -8,10 +8,20 @@
             <title>Chocolate Milka</title>
             <manufacturer>Milka</manufacturer>
             <model>Oreo</model>
-            <price currency="EUR" discount="12" VAT = "general"></price>
+            <price currency="EUR" discount="12" VAT = "general">5</price>
             <stock>25</stock>
             <reconditioned></reconditioned>
         </product>
+
+        <product id="P2" EAN = "EAN2">
+            <title>Chocolate Lidl</title>
+            <brand>Lidl</brand>
+            <model>Blanco</model>
+            <price currency="EUR" discount="12" VAT = "general"></price>
+            <stock>25</stock>
+            <reconditioned/>
+        </product>
+
     </products>
     <customers>
         <customer id="C1" date_of_creation ="14-02-2025">
@@ -23,10 +33,10 @@
         </customer>
     </customers>
     <sales>
-        <sale date_of_sale ="" customer = "" product_identifier = "" quantity_sold = "">
-            <list_of_products></list_of_products>
-            <total_price></total_price>
-            <currency></currency>
+        <sale date_of_sale ="18-02-2025" customer = "C1" product_identifier = "P1" quantity_sold = "2">
+            <list_of_products>Chocolate Milka</list_of_products><!-- Cambia por item-->
+            <total_price>10</total_price>
+            <currency>EUR</currency>
         </sale>
     </sales>
 

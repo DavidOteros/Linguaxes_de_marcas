@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="car" type="carType">
+    </xs:element>
+    <xs:complexType name="carType"> <!-- Ao sacalo fora do elemento, e poñelo fora, e ligalos a través do name e do type, permitenos que sexa reutilizable-->
+        <xs:sequence>
+            <xs:element name="manufacturer" type="xs:string" />
+            <xs:element name="model" type="xs:string" />
+        </xs:sequence> <!-- Atributos siempre
+        se ponen al final de todo.Después de una secuencia de elementos-->
+        <xs:attribute name="registration" use="required" type="xs:string" />
+    </xs:complexType>
+</xs:schema>
