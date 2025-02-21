@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<purchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="purchaseOrder.xsd" orderDate="2025-02-13">
+    <shipTo country="US">
+        <name></name>
+        <street></street>
+        <city></city>
+        <state></state>
+        <zip>200.12</zip>
+    </shipTo>
+    <billTo country="US">
+        <name></name>
+        <street></street>
+        <city></city>
+        <state></state>
+        <zip>200.12</zip>
+    </billTo>
+    <comment></comment>
+    <items>
+        <item partNum="123-AB">
+            <productName></productName>
+            <quantity>1</quantity>
+            <USPrice>20</USPrice>
+            <shipDate>2025-02-13</shipDate>
+        </item>
+    </items>
+</purchaseOrder>
