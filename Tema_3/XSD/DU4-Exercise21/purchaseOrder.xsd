@@ -32,7 +32,7 @@
                             </xsd:simpleType>
                         </xsd:element>
                         <xsd:element name="USPrice" type="xsd:decimal" />
-                        <xsd:element minOccurs="0" ref="comment" />
+                        <xsd:element minOccurs="0" ref="comment" /> <!--Por defecto si no pones maxocurrs colle outbound-->
                         <xsd:element minOccurs="0" name="shipDate" type="xsd:date" />
                     </xsd:sequence>
                     <xsd:attribute name="partNum" type="SKU" use="required" />
