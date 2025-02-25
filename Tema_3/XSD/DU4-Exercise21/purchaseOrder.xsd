@@ -48,3 +48,5 @@
     <xsd:element name="purchaseOrder" type="PurchaseOrderType" />
     <xsd:element name="comment" type="xsd:string" />
 </xsd:schema>
+
+<!--Prefixo xsd ou xs, calquera é valido, da igual o nome pero soen utiliarse ese dous-->

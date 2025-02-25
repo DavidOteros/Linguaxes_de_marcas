@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="teacher">
+        <xs:complexType>
+            <!-- <xs:choice> Significa
+                escoller entre un deses, dentro das posibildades que poñemos unha delas é a que se
+                elixe
+                <xs:element name="firstname" type="xs:string" />
+                <xs:element name="surname" type="xs:string" />
+                <xs:element name="age" type="xs:string" />
+            </xs:choice> -->
+
+            <xs:all> <!--Valen todos estos en calquera posicion -->
+                <xs:element name="firstname" type="xs:string" />
+                <xs:element name="surname" type="xs:string" />
+                <xs:element name="age" type="xs:string" />
+            </xs:all>
+
+            <!--Logo tamen existe xs:sequence, é dicir, tes que poñelos na posición que lle das, co mesmo orde, se pos firstname, surname, e age, no XML ten que seguir esa orde-->
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
