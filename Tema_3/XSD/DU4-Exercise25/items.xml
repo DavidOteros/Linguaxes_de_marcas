@@ -1,0 +1,22 @@
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="items.xsd">
+    <item>
+        <name></name>
+        <photo></photo>
+        <tags></tags>
+        <diameter>3</diameter>
+        <weight>4</weight>
+        <size>Small</size>
+        <prize>12.09</prize>
+
+    </item>
+</items>
+
+
+<!-- Lets assume that we have next assumptions:
+
+    - Xml consists of zero or more items.
+    - Each item has required name, photo, tags, diameter, weight, price fields and one non required enumeration size field.
+    - Diameter, weight and price must be numeric, positive values.
+    - Price also must be decimal with two numbers after point.
+    - Size field, if present, can be one of: Big, Small, empty.-->

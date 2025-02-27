@@ -29,3 +29,6 @@ caracteres que aparezca en la expresion regular, por ejemplo un parentesis, una 
 
 tipos simples y tipos complexos:
 
+Diferenza entre elementos simples, e elemntos complexos:
+
+Os tipos simples solo teñen "nome e tipo", un elemento baleiro tamén é un complexo, e revisar na casa as diferenzas para saber cal utilizar
