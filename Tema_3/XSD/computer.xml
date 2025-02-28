@@ -1,0 +1,9 @@
+<computer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="computer.xsd">
+    <hardware>Power Supply</hardware>
+    <hardware>Motherboard</hardware>
+    <software>Windows 10</software>
+    <software>Paint</software>
+    <users>manuel bartolo paco susana </users> <!--Vamos a hacer ejercicio, que nos muestra como se hace al meter los users así -->
+    <ages>21 30 69 -1 </ages>
+</computer>
