@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="juicers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="juicer">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string" />
+                            <xs:element name="image" type="imageFile" />
+                            <xs:element name="description" type="xs:string" />
+                            <xs:element name="warranty" type="xs:date" minOccurs="0" maxOccurs="1" />
+                            <xs:element name="weight" type="money" minOccurs="0" maxOccurs="1"/>
+                            <xs:element name="cost" type="money" minOccurs="1" />
+                            <xs:element name="retailer" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="money"> <!-- Restricción para money, hasta 5 digitos incluyendo la coma-->
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"></xs:totalDigits>
+            <xs:fractionDigits value="2"></xs:fractionDigits>
+            <xs:minExclusive value="0"></xs:minExclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="imageFile">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\./([a-zA-Z0-9]|_|-|.)*\.(jpeg|png|svg|gif)"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

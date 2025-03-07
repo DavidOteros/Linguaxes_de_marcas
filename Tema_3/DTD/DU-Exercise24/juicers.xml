@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<juicers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="juicers.xsd">
+    <juicer>
+        <name>PS4</name>
+        <image>./image.png</image>
+        <description>Una cosa pa jugar</description>
+        <warranty>2021-11-02</warranty>
+        <weight></weight>
+        <cost>77.43</cost>
+        <retailer></retailer>
+    </juicer>
+</juicers>
