@@ -17,6 +17,16 @@ https://student-domain/?rest_route=/wp/v2/posts/
 
 Os permalinks chulos, ponse en settings, permalinks, e seleccionamos "Post name"
 
+3. Cómo activar los permalinks chulos
+Para solucionar este problema y usar las URLs estándar de la API REST, sigue estos pasos:
+
+En el panel de administración de WordPress, ve a Settings > Permalinks (Ajustes > Enlaces permanentes).
+
+Selecciona la opción Post Name ("Nombre de la entrada").
+
+Guarda los cambios.
+
+Esto hará que las URLs amigables se habiliten para todo tu sitio, incluyendo los endpoints de la API REST.
 
 ## Comandos http - CRUD:
 
