@@ -1,0 +1,18 @@
+<shiporder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="shiporder.xsd" orderid="ABC123">
+
+    <orderperson>Pedro</orderperson>
+    <shipto>
+        <name>migueñ</name>
+        <address>Calle orihuela</address>
+        <city>Santiago</city>
+        <country>España</country>
+    </shipto>
+
+    <item>
+        <title>Manzana</title>
+        <quantity>3</quantity>
+        <price>4.45</price>
+    </item>
+
+</shiporder>
