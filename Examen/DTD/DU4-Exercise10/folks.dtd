@@ -1,0 +1,25 @@
+<!ELEMENT folks (person+)> 
+<!-- El elemento "folks" es obligatorio y debe contener al menos un elemento "person". 
+     Puede contener más de uno, gracias al operador "+" (uno o más). -->
+
+<!ELEMENT person (name)> 
+<!-- Cada elemento "person" debe tener exactamente un elemento hijo "name". 
+     Esto significa que el "name" es obligatorio y debe aparecer una sola vez. -->
+
+<!ATTLIST person pin ID #REQUIRED> 
+<!-- El atributo "pin" es obligatorio (#REQUIRED) y debe ser de tipo "ID". 
+     Esto asegura que cada "person" tenga un identificador único en el documento XML, y 
+     como en XML los valores de tipo ID deben comenzar con un carácter no numérico, esto se respeta automáticamente. -->
+
+<!ATTLIST person friend IDREF #IMPLIED> 
+<!-- El atributo "friend" es opcional (#IMPLIED) y debe ser de tipo "IDREF". 
+     Esto permite referenciar el "pin" (ID) de otra persona dentro del documento como "amigo". -->
+
+<!ATTLIST person likes IDREFS #IMPLIED> 
+<!-- El atributo "likes" también es opcional (#IMPLIED) y debe ser de tipo "IDREFS". 
+     Esto significa que puede contener una lista de referencias a los "pin" (ID) de varias personas
+     que esta persona "gusta". Cada referencia debe estar separada por espacios. -->
+
+<!ELEMENT name (#PCDATA)> 
+<!-- El elemento "name" contiene datos de tipo PCDATA (Parsed Character Data), es decir, texto legible.
+     Cada persona tendrá un "name" que incluirá el nombre de esta persona. -->

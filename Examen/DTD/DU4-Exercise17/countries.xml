@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE countries [
+  <!ELEMENT countries (country*)>
+  <!ELEMENT country (area, currency+, government, borders)>
+  <!ATTLIST country name ID #REQUIRED>
+  <!ELEMENT area (#PCDATA)>
+  <!ATTLIST area unit NMTOKEN #REQUIRED>
+  <!ELEMENT currency (#PCDATA)>
+  <!ELEMENT government EMPTY>
+  <!ATTLIST government system NMTOKEN #IMPLIED>
+  <!ELEMENT borders EMPTY>
+  <!ATTLIST borders country IDREFS #IMPLIED>
+]>
+
+<countries>
+    <country name="Spain">
+        <area unit="km2">504</area>
+        <currency>peseta</currency>
+        <government system="monarchy"></government>
+        <borders country="France"></borders>
+    </country>
+    <country name="France">
+        <area unit="km2">675</area>
+        <currency>French Franc</currency>
+        <government system="republic"></government>
+        <borders country="France Switzerland"></borders>
+    </country>
+    <country name="Switzerland">
+        <area unit="km2">1000</area>
+        <currency>swiss franc</currency>
+        <government system="republic"></government>
+        <borders country="France"></borders>
+    </country>
+
+</countries>
