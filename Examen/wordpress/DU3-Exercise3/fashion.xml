@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+</head>
+<body>
+        <h2>Autumn Collection</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reiciendis, est suscipit eius velit ad facilis vero accusamus ipsum asperiores delectus excepturi cum commodi maxime recusandae sequi incidunt non quas!</p>
+        <img src="./img1.jpg" alt="">
+        <h2>Casual Collection</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cupiditate, deserunt facilis atque doloribus consequatur sed tempora quasi assumenda repudiandae nostrum sequi, obcaecati expedita tempore molestiae nemo quae laborum at!</p>
+        <img src="./img2.jpg" alt="">
+</body>
+</html>
