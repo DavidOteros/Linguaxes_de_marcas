@@ -1,0 +1,25 @@
+<!ELEMENT university (department+,course+,instructor+,teaches+)>
+<!ELEMENT department (#PCDATA)>
+<!ATTLIST department dept-name ID #REQUIRED 
+                building NMTOKEN #REQUIRED
+                budget NMTOKEN #REQUIRED>
+
+<!-- Si quieres poner un default tienes que quitar el required-->
+<!ELEMENT course (#PCDATA)>
+<!ATTLIST course course-id ID #REQUIRED
+    title CDATA #REQUIRED
+    dept-name CDATA #REQUIRED
+    credits NMTOKEN #REQUIRED>
+<!-- lISTA DE ATRIBUTOS-->
+
+<!ELEMENT instructor (#PCDATA)>
+<!ATTLIST instructor IID ID #REQUIRED 
+        name NMTOKEN #REQUIRED
+        dept-name IDREF #REQUIRED
+        salary NMTOKEN #REQUIRED>
+<!-- IDS non poden levar numeros diante-->
+<!ELEMENT teaches (#PCDATA)>
+<!ATTLIST teaches IID IDREF #REQUIRED>
+<!ATTLIST teaches course-id IDREF #IMPLIED> <!-- Opcional-->
+
+<!-- ID como es una llave primaria no puede ser ni opcinal ni nula, pero los idrefs si que son opcionales-->
