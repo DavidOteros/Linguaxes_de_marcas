@@ -10,8 +10,8 @@
 <!ELEMENT volume (#PCDATA)>
 <!ELEMENT number (#PCDATA)>
 <!ELEMENT misc (author+,title,year,pages)> <!-- Puede aparecer mas de uno-->
-<!ATTLIST misc id NMTOKEN #REQUIRED>
-<!ATTLIST misc id2 NMTOKEN #REQUIRED>
+<!ATTLIST misc id NMTOKEN #REQUIRED
+         id2 NMTOKEN #REQUIRED>
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
 <!ELEMENT pages (#PCDATA)>

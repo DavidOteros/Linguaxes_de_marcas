@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="university">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="school">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string" />
+                            <xs:element name="location" type="xs:string" />
+                            <xs:element name="staff" type="staffType" maxOccurs="unbounded" />
+                            <xs:element name="subjects" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="subject">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="name" type="xs:string" />
+                                                    <xs:element name="description" type="xs:string" />
+                                                    <xs:element name="capacity" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="subject-id" use="required" />
+                                                <xs:attribute name="staff-id" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="school-ID" type="xs:ID" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <!-- Tipo reutilizable Staff-->
+
+    <xs:complexType name="staffType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="tittle" type="xs:string" minOccurs="0" />
+            <xs:element name="category" type="categoryType" />
+            <xs:element name="address" type="address" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="staff-id" type="xs:ID" use="required" />
+    </xs:complexType>
+
+    <!--Tipo Adress Grupo -->
+    <xs:complexType name="address">
+        <xs:sequence>
+            <xs:element name="street" type="xs:string" />
+            <xs:element name="suburb" type="xs:string" />
+            <xs:element name="postcode" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!-- Restriccion staff-->
+    <xs:simpleType name="categoryType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="academic"/>
+            <xs:enumeration value="general"/>
+            <xs:enumeration value="technical"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>

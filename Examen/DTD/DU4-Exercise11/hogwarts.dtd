@@ -10,9 +10,9 @@
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT courses (course+)>
 <!ELEMENT course (class+)>
-<!ATTLIST course name NMTOKEN #REQUIRED>
-<!ATTLIST course teacher IDREF #REQUIRED>
-<!ATTLIST course nrStudents NMTOKEN #IMPLIED>
+<!ATTLIST course name NMTOKEN #REQUIRED
+        teacher IDREF #REQUIRED
+        nrStudents NMTOKEN #IMPLIED>
 <!ELEMENT class EMPTY>
 <!ATTLIST class day NMTOKEN #REQUIRED>
 <!ATTLIST class hour NMTOKEN #REQUIRED>

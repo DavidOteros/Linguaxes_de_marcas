@@ -1,1 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<university xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="university.xsd">
+
+    <school school-ID="SC-01">
+        <name>Vales Villamarin</name>
+        <location>Betanzos</location>
+        
+        <staff staff-id="ST-01">
+            <name>Manuel</name>
+            <tittle>Ingeniero</tittle> <!-- Pode non aparecer-->
+            <category>general</category>
+            <address> <!-- PODE TER VARIOS ADRESS-->
+                <street>Rueiro de Figueiriñas</street>
+                <suburb>Santiago</suburb>
+                <postcode>15702</postcode>
+            </address>
+        </staff>
+
+        <staff staff-id="ST-02">
+            <name>Pablo</name>
+            <tittle>Biologo</tittle> <!-- Pode non aparecer-->
+            <category>academic</category>
+            <address> <!-- PODE TER VARIOS ADRESS-->
+                <street>As Mariñas</street>
+                <suburb>Santiago</suburb>
+                <postcode>15705</postcode>
+            </address>
+        </staff>
+
+        <subjects>
+            <subject subject-id="SU-01" staff-id="ST-01 ST-02"> <!-- Ensinada polo menos 1 -->
+                <name>Biologia</name>
+                <description>Cosas de biologia</description>
+                <capacity>200</capacity> <!-- Capacidade menor 6 non é valido, maxima 400-->
+            </subject>
+        </subjects>
+
+
+        <subjects>
+            <subject subject-id="SU-02" staff-id="ST-02"> <!-- Ensinada polo menos 1 -->
+                <name>Quimica</name>
+                <description>Cosas de quimica</description>
+                <capacity>6</capacity> <!-- Capacidade menor 6 non é valido, maxima 400-->
+            </subject>
+        </subjects>
+
+    </school>
+
+
+
+
+
+</university>

@@ -10,11 +10,11 @@
                                 <xs:complexType mixed="true"> <!-- Viene hecho por defecto-->
                                     <xs:sequence>
                                         <xs:element name="url" type="xs:string" />
-                                        <xs:element name="views" type="xs:string" />
+                                        <xs:element name="views" type="viewsType" />
                                         <xs:element name="comments">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="good" type="xs:string" />
+                                                    <xs:element name="good" type="goodType" />
                                                     <xs:element name="bad" type="xs:string" />
                                                 </xs:sequence>
                                             </xs:complexType>
@@ -113,13 +113,21 @@
             <xs:pattern value="\d{2}-\[[A-Z]{2}\]-\d{2}"></xs:pattern>
         </xs:restriction>
     </xs:simpleType>
-<xs:complexType name="serverType">
-    <xs:choice>
-        <xs:element name="gmail" type="xs:string"/>
-        <xs:element name="hotmail" type="xs:string"/>
-        <xs:element name="iessanclemente.net" type="xs:string"/>
-    </xs:choice>
-</xs:complexType>
+
+<xs:simpleType name="viewsType">
+    <xs:restriction base="xs:int">
+        <xs:minInclusive value="0"></xs:minInclusive>
+        <xs:maxInclusive value="1000000000"></xs:maxInclusive>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="goodType">
+    <xs:restriction base="viewsType">
+        <xs:maxInclusive value="200000"></xs:maxInclusive>
+    </xs:restriction>
+</xs:simpleType>
+
+
 <xs:simpleType name="yearType">
     <xs:restriction base="xs:gYear">
         <xs:minInclusive value="2020"></xs:minInclusive>
