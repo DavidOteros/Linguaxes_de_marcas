@@ -6,7 +6,7 @@
 			"label": "xslt-js: Saxon-JS Transform (New)",
 			"xsltFile": "${command:xslt-xpath.pickXsltFile}",
 			"xmlSource": "${command:xslt-xpath.pickXmlSourceFile}",
-			"resultPath": "${workspaceFolder}/xsl-out/result1.xml",
+			"resultPath": "${command:xslt-xpath.pickResultFile}",
 			"group": {
 				"kind": "build"
 			},

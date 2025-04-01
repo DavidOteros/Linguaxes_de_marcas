@@ -5,8 +5,8 @@
     
     <xsl:output method="xml" indent="yes"/>
 
-    <!--  -->
     <xsl:template match="/">
+        <!-- Para crear un nodo -->
         <products/>
     </xsl:template>
 
