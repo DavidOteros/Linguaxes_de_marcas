@@ -8,7 +8,12 @@
     <!-- A barra fai referencia ao path -->
     <xsl:template match="/">
         <!-- Para crear un nodo -->
-        <products/>
+        <products>
+            <!-- Etitqueta xsl, que pone el valor de un elemento, y en select colocamos el xpath -->
+            <identification>
+                <xsl:value-of select="products/product[last()]/name"/>
+            </identification>
+        </products>
     </xsl:template>
 
     

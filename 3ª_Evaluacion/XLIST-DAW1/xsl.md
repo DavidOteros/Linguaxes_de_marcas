@@ -16,4 +16,4 @@ Logo dentro de taskt.json, vamos a terminal, run task, e logo pillamos el xml y 
 
 Despois create a carpeta xsl-out, co result1.
 
-Modificamos el taskt.json, entonces ahora vamos a resultPath, y le cambia el el json para nose que polla del nombre ${command:xslt-xpath.pickResultFile}, creo que para poder elegir el nombre
+Modificamos el taskt.json, entonces ahora vamos a resultPath, y le cambia el el json para nose que polla del nombre ${command:xslt-xpath.pickResultFile}, creo que para poder elegir el nombre, y se lo cambio no al js, al otro
