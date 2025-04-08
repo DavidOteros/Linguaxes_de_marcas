@@ -1,0 +1,31 @@
+html, body{
+    color: red;
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+    margin: 0px;
+
+
+}
+
+
+
+article{
+    color: white;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    /* Podríamos usar gap aquí */
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+img{
+    width: 250px;
+
+}
