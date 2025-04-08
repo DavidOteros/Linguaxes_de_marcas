@@ -1,8 +1,0 @@
-//Hacer mención que tanto True, como False, o Null, debe ser representado sin comillas. Los números tampoco han de ir en comillas, exceptuando que sea una fecha, ahí sí. 
-{
-    "language_name": "Python",
-    "creation_year": 1991,
-    "authors": "Guido van Rossum",
-    "compiled": false
-  }
-  
