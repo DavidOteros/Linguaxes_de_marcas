@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.library.com/" xmlns:bk="http://www.library.com/books" >
+   
+    <employee>
+        <name>Erik T. Ray</name> 
+        <title>Mr. </title>
+        <publications>
+            <bk:book>
+                <bk:title>Learning XML</bk:title>
+                <bk:description>This second edition of the bestselling Learning XML provides web 
+                developers with a concise but grounded understanding of XML</bk:description>
+            </bk:book>
+        </publications>
+    </employee>
+
+</library>
