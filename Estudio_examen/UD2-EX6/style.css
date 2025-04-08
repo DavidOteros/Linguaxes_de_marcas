@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    background-color: #4f64aa;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+
+
+}
+
+header{
+
+    height: 300px;
+    width: 100%;
+    position: fixed;
+    background-color: #4f64aa; /*Le doy el background color al header para que este quede definido y se muestre sobre el main*/
+     
+}
+
+h1 {
+    margin: 0; /* Elimina cualquier margen extra */
+    position: absolute; /* Lo pongo en absoluto para poner Tower2 donde a mi me interesa */
+    top: 1%;
+    left: 48%; /* Centra horizontalmente */
+    font-size: 2rem; /* Ajusta el tamaño del texto según prefieras */
+    color: white; /* Mantén el color blanco */
+    font-weight: lighter;
+}
+
+p{
+    position: absolute;
+    left: 50%;
+    color: lightpink;
+    font-size: 24px;
+    
+
+
+}
+
+
+section {
+    width: 400px;
+    height: 300px;
+    background-color: lightpink;
+    position: relative; /* Mantén la relación con los elementos hijos */
+
+  }
+    
+    #one{
+      width:30px;
+      height:80px;
+      background:blue;
+      position:absolute;
+      bottom:0px;
+      left:120px;  
+  }
+   #two{
+      width:30px;
+      height:80px;
+      background:blue;
+      position:absolute;
+      bottom:0px;
+      left:180px;
+  }
+     #three{
+      width:30px;
+      height:80px;
+      background:blue;
+      position:absolute;
+      bottom:0px;
+      left:240px;
+  } 
+    #four{
+      width:150px;
+      height:30px;
+      background:blue;
+      position:absolute;
+      bottom:80px;
+      left:120px; 
+  }
+     #five{
+      width:30px;
+      height:80px;
+      background:blue;
+      position:absolute;
+      bottom:110px;
+      left:150px;
+  }
+      #six{
+      width:30px;
+      height:80px;
+      background:blue;
+      position:absolute;
+      bottom:110px;
+      left:210px;
+  }
+    #seven{
+      width:90px;
+      height:30px;
+      background:blue;
+      position:absolute;
+      bottom:190px;
+      left:150px; 
+  }
+      #eight{
+      width:30px;
+      height:80px;
+      background:blue;
+      position:absolute;
+      bottom:px;
+      left:180px;
+  }
+
+  main{
+    background-color: red;
+    height: 2000px;
+    border: 0;
+    background-image: url(./towers.png);
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+  }

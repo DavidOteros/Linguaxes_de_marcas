@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the 24x7 Compostela Fitness Club: Courts Reservation Page!!</h1>
+        <img src="/Linguaxes_de_marcas/Estudio_examen/UD2-EX4/planification.png" alt="Dos chicos apuntando en el calendario" title="Dibujo de calendario" width="200">
+    </header>    
+    <main>
+        <form action="nothing.php" method="post">
+            <fieldset> 
+                <legend>Members Demographics</legend>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" >
+                <br>
+                <p>Are you a member?</p> <!--Para que cuando clickes uno se desclicke el otro necesitas que ambos compartan el mismo nombre-->
+                <label for="member">Member</label>
+                <input type="radio" name="membership" id="member" value="yes"> <!--Añado el campo value, tanto a member como a non member, para embiar un valor, sino únicamente llegará membership pero no nos dará ninguna clase de información -->
+                <label for="non-member">Non-member</label>
+                <input type="radio" name="membership" id="non-member" value = "no">
+                <br> <!--Los br se puede poner en distintas líneas como juntos en la misma, da lo mismo-->
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <br>
+            <label for="facility">Facility:</label>
+            <select id="facility" name="facility">
+                <option value="footbaal">Indoor Football</option>
+                <option value="taekwondo">Taekwondo</option>
+                <option value="tenis">Tenis</option>
+            </select>
+            <p>Select a reservation date and time:</p>
+            <input type="datetime-local" name="date" id="date">
+            <br>
+            <br>
+            <input type="checkbox" name="policy" id="policy">
+            <label for="policy">I agree to the club's reservation policy</label>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+
+
+        </form>
+    </main>
+</body>
+</html>
