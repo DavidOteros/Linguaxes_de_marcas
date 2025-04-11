@@ -1,0 +1,1 @@
+Neste caso exportamos en formato txt, que simplmemente poñer txt cando executamos o script de saxonhe12-5j

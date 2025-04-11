@@ -8,7 +8,9 @@ html, body{
 
 }
 
-
+body{
+    align-items: center;
+}
 
 article{
     color: white;
@@ -19,7 +21,7 @@ article{
     width: 300px;
     margin: 10px;
     padding: 10px;
-    /* Podríamos usar gap aquí */
+    /* Podríamos usar gap */
     text-align: center;
     border-radius: 10px;
 }
