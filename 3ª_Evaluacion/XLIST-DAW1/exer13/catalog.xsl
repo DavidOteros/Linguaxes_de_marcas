@@ -11,8 +11,7 @@
             <body>
                 <h1>Books by Authors Born Before 1970</h1>
                 <ol>
-                    <!-- Aquí si que se pone la ruta -->
-                    <xsl:apply-templates select="//book"/>     
+                    <xsl:apply-templates select="catalog/book"/>     
                 </ol>
                 
             </body>

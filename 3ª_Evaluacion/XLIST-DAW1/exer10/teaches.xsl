@@ -16,9 +16,7 @@
                         <th>Course</th>
                         <th>Lecturer</th>
                     </tr>
-                    
                     <xsl:apply-templates select="//teaches-tuple"/>
-                    
                     
                 </table>
                 

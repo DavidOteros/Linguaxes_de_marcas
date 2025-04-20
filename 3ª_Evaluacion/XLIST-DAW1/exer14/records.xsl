@@ -12,7 +12,6 @@
                 <h1>Número de libros: <xsl:value-of select="count(//record[city='Glasgow' and date/year='1790'])"/></h1>
             </header>
             <body>
-                
                 <p></p>
             </body>
             
