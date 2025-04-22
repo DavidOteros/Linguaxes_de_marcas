@@ -19,7 +19,11 @@ Despois create a carpeta xsl-out, co result1.
 
 Modificamos el taskt.json, entonces ahora vamos a resultPath, y le cambia el el json para nose que polla del nombre ${command:xslt-xpath.pickResultFile}, creo que para poder elegir el nombre, y se lo cambio no al js, al otro
 
-
+Seleccionar siempre el stylesheet
 
 
 -- como usar el sl 
+
+
+
+El sort solo se puede utilizar con apply-templates, o con for-each, por defecto ordenar con ascedente
