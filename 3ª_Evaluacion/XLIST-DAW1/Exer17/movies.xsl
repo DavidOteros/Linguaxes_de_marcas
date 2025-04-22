@@ -14,6 +14,7 @@
             <body>
                 <ol>
                     <xsl:apply-templates select="Movies"/>
+                    <!-- Se puede hacer el sprt aqui también y no en el template, aprender a hacerlo así  -->
                 </ol>
             </body>
         </html>   
