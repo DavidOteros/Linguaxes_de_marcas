@@ -44,5 +44,12 @@ $lt
 $lte
 $gt
 $gte
+$eq que é igual : eo valor
+$ne
+$in
+
+
+Se no exame nos di que eplicitamente é crear unha colección, temos que facelo explicitamente con ese script 
+
 
 

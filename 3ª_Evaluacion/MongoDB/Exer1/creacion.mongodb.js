@@ -1,4 +1,4 @@
-
+//Podría meter todo en el mismo script o se meto todo no mesmo script duplicanse os datos todo o rato?
 
 // Select the database to use.
 use('davidos');
