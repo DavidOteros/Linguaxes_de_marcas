@@ -1,6 +1,8 @@
 // Select the database to use.
 use('davidos');
 
+db.getCollection('movies').drop()
+db.createCollection('movies')
 
 
 db.getCollection('movies').insertMany([
