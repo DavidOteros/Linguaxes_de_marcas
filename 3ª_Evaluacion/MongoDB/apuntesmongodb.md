@@ -47,6 +47,10 @@ $gte
 $eq que é igual : eo valor
 $ne
 $in
+$or
+$and
+$nor
+$not
 
 
 Se no exame nos di que eplicitamente é crear unha colección, temos que facelo explicitamente con ese script 
