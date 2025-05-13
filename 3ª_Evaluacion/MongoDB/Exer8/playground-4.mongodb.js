@@ -13,18 +13,12 @@
 use('davidos');
 
 db.getCollection("peliculas").drop()
-db.getCollection("peliculas").insertMany([{
+db.getCollection("peliculas").insertOne([{
     "movie_id":23123,
     "title": "La matanza canibal de los garrulos lisérgicos",
     "genre": "Terror",
     "release_year": "1993-01-01",
-    "duration":90
+    "duration":90,
     "ratings": 10,
     "actors":["Manuel Manquiña", "Juanillo Esteban"]
-} {
-    "theater"
-}
-
-
-
-])
+}])
