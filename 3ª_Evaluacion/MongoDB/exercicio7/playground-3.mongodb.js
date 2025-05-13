@@ -16642,23 +16642,53 @@ db.getCollection('pokemon').updateMany(
 
 //Add 10 to the value of attack of all pokemon whose name begins with characters: Pik.
 
-db.getCollection('pokmemon').updateMany({"name.english":/^Pik/})
-
+db.getCollection('pokemon').updateMany({ "name.english": /^Pik/ },{ $inc: { "base.Attack": 10 } }
+  )
 
 //Search english name of Pokemons of type Bug.
+
+db.getCollection('pokemon').find({"type":"Bug"})
+
 //Search the french name of Pokemons that are not of type Bug.
+
+db.getCollection('pokemon').find({"type":{$ne:"Bug"}},{"name.french":1})
+
 //Search english and french name of Pokemons that are not of electric type. 
+
+db.pokemon.find({"type":{$ne:"Electric"}}, {"name.french":1, "name.english":1})
+
 //Search english and french name of Pokemons whose defense is not lower than 49.
+
+db.pokemon.find({"base.Defense":{$gt:49}}, {"name.french":1, "name.english":1})
+
 //Show all distinct types of Pokemons.
+
+db.pokemon.distinct("type")
+
 //Show the info of the first five Pokemons.
+
+db.pokemon.find({}).limit(5)
+
 //Show the info of the second five Pokemons.
+
+db.pokemon.find({}).skip(5).limit(5)
 
 //Count the number of Pokemons in the pokemon collection.
 
+db.pokemon.count()
+
 //Count the number of Pokemons whose type is fire.
+
+db.pokemon.find({"type":"Fire"}).count()
 
 //Count the number of Pokemons whose defense is greater than 70.
 
+db.pokemon.find({"base.Defense":{$gt:70}}).count()
+
 //Delete all pokemons of type fire.
 
+db.pokemon.deleteMany({type:"Fire"})
+
 //Delete one pokemon of your election.
+
+db.pokemon.deleteMany({})
