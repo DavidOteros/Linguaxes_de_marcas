@@ -1,11 +1,19 @@
 Creamos arquivo xsl co mesmo nome co xml, e unha vez dentro poñemos "<", e seleccionamos 
 xsl:stylesheet
 
+Primero instalamos XLST/Xpath 
+
 Pinchamos en comand pallete
 
 logo preferences: open user settings
 
 Logo buscamos xslt, y Saxon Jar e damoslle a ruta pero hay que quitar as comillas,  Metemolo no xslt tasks saxon jar
+
+![alt text](image.png)
+
+
+vamos a terminan y run build task, y luego ejecutamos/configuramos saxonjar 
+![alt text](image-1.png)
 
 PAra noemi pon demasiada morrala enton borra cousas, todos os espazos de nomes menos o primeiro aya version="3.0"
 
