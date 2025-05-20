@@ -1,0 +1,64 @@
+use('marcoscc')
+
+//1. Obtain all the information about the artwork entitld Leda
+
+    db.artworks.find({'title':'Leda'});
+
+//2. Get an array of all the different artists id in the artworks collection
+
+    db.artworks.find({},{_id:1});
+
+//3. Get the artist's name and the artwork type title for all the untitled artworks
+
+    db.artworks.find({},{title:null},{artist_title:1,artwork_type_title:1});
+
+//4. Get the title and start date of all artworks started before the year 1970
+
+    db.artworks.find({date_start:{$lt:1970}},{title:1,date_start:1});
+
+//5. Count the number of artworks without thumbnail
+
+    db.artworks.countDocuments({thumbnail:null})
+
+//6. Get the title and artist's name and artist display of the artworks that contain politics or money in their title
+
+    //db.artworks.find({$text:[{title:{$search:'Politics','Money'}}]},{title:1,artist_title:1,artist_display:1});
+
+                                            /*ESTA ESTÁ MAL, NO COMPILA*/ 
+
+//7.Get the title and description of the first five artworks that do not have the word Chicago in their description
+
+    db.artworks.find({$nor:[{description:{$regex:'Chicago'}}]},{title:1,description:1}).limit(5);
+
+//8. Count the number of artworks that have the word women in its category titles regardless of case
+
+    //db.artworks.find();
+
+                                            /*ESTA ESTÁ MAL*/ 
+
+//9. Sort by title the artworks that do not have their departament title the word art or the word america regardless of case
+
+    //db.artworks.find()
+
+                                            /*ESTA ESTÁ MAL*/ 
+
+//10. Update the place of origin of those whose place of origin is United States to United States of America
+
+    db.artworks.update({place_of_origin:'United States'},
+    {
+        $set:{place_of_origin:'United States of America'}
+    });
+
+//11.Increase by 1000 the weight of artworks weighing more than 6000 units
+
+    //db.artworks.updateMany({'suggest_autocomplete_all.weight':{$gt:6000}},{$inc:{'suggest_autocomplete_all.weight': 1000}});
+
+                                            /*ESTA ESTÁ MAL, NO COMPILA*/ 
+
+//12. Remove the latitude and longitude keys from the artworks that don't have this information
+
+    db.artworks.deleteMany({},{latitude:null,longitude:null});
+
+//13. Delete the artworks whose _id is less than 15000
+
+    db.artworks.deleteMany({},{_id:{$lt:15000}});
