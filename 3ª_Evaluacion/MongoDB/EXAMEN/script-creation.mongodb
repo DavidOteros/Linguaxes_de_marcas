@@ -1,4 +1,5 @@
-use("marcoscc");
+use("david");
+db.dropDatabase()
 db.createCollection("artworks");
 db.getCollection("artworks").insertMany([
   {
